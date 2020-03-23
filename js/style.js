@@ -15,6 +15,12 @@ function constet(){
 	}
 }
 
-vara();
-lett();
-constet();
+var a= function add(){
+	console.log(20);
+} 
+
+console.log(a());
+
+//arrow function (f) eita premature {return f*f*f}; functionility 
+var arrowfun= (f)=>{return f*f*f};
+console.log(arrowfun(3));
