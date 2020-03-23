@@ -24,3 +24,22 @@ console.log(a());
 //arrow function (f) eita premature {return f*f*f}; functionility 
 var arrowfun= (f)=>{return f*f*f};
 console.log(arrowfun(3));
+
+var gun=(m,n)=>{return m*n};
+console.log(gun(5,5));
+
+
+///this keyword and object 
+const mango={
+	color:'green',
+	price:100,
+	mesurement:"kg",
+	about:function(){
+		return console.log(1+" "+this.mesurement+this.color+" color mango is"+this.price+" Tk");
+		//using backcode
+		return console.log(`1 ${this.mesurement} ${this.color} mango is ${this.price}`);
+
+	}
+}
+
+console.log(mango.about());
