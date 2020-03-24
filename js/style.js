@@ -64,3 +64,5 @@ class test{
 var obj=new test("Mango");
 obj.printt();
 test.pri();
+
+
