@@ -43,3 +43,24 @@ const mango={
 }
 
 console.log(mango.about());
+
+
+//call object satatic
+class test{
+	constructor(name){
+		this.name=name;
+	}
+
+	printt(){
+		console.log(this.name+" is so testy");
+	}
+
+	static pri(){
+		console.log("Object create nah kobe ei function call kora jabe");
+	}
+}
+
+
+var obj=new test("Mango");
+obj.printt();
+test.pri();
