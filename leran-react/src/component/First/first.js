@@ -4,8 +4,9 @@ class First extends Component{
     render(){
         return (
             <div>
-                <h1>I am Ashique Abdullah</h1>
-                <p>Now i am learning React Js</p>
+                <h5>I am {this.props.name}</h5>
+                <h5>Email {this.props.email}</h5>
+                <h5>address {this.props.address}</h5>
             </div>
         )
     }
