@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 class MakeState extends Component{
     constructor(){
         super()
-        var obj={
+        this.state={
             color:["red","green"],
             name:"Mango",
             country:{
@@ -11,12 +11,17 @@ class MakeState extends Component{
                 two:"India"
             }
         }
-        this.state=obj;
+    }
+    ch= (a)=>{
+        this.setState({
+            name:a
+        })
     }
     render(){
         return(
             <div>
                 <h1>{this.state.color[1]}Color {this.state.country.one} {this.state.name}</h1>
+                <button onClick={this.ch.bind(this,"black")} className="btn btn-info">Chage State value</button>
             </div>
         )
     }
