@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 
 function Test(props){
-    function clc(){
-        alert("Click korci")
+    function clc(a){
+        alert(a)
     }
     return(
         <div>
-            <button onClick={clc}>Button From function</button>
+            <button onClick={clc.bind(this,"Kaj korse")}>Button From function</button>
             <h1>I am {props.name}</h1>
         </div>
     )
