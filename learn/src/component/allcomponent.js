@@ -10,7 +10,7 @@ class Allcomponent extends Component{
     render(){
         return (
             <div>
-                <h1>Name: {this.props.name} Age {this.props.age}</h1>
+                <h1>Book Name: {this.props.name} Book author {this.props.author}</h1>
             </div>
         );
     }
