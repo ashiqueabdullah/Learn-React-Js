@@ -1,13 +1,19 @@
-import React from 'react'
+import React,{Component} from 'react'
 
 
-let Allcomponent= (props)=>{
-    return (
-        <div>
-            <h1>Name: {props.name} And Age {props.age}</h1>
-    <h3>Extra info: {props.children}</h3>
-        </div>
-    );
+
+
+class Allcomponent extends Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
+        return (
+            <div>
+                <h1>Name: {this.props.name} Age {this.props.age}</h1>
+            </div>
+        );
+    }
 }
 
 export default Allcomponent;
