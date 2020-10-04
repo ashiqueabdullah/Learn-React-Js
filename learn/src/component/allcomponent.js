@@ -1,5 +1,6 @@
+import React from 'react'
 
-function allcomponent() {
+function Allcomponent() {
     return(
         <div>
             <h1>Ashique Abdullah</h1>
@@ -7,4 +8,4 @@ function allcomponent() {
     );
 }
 
-export default allcomponent;
+export default Allcomponent;

@@ -1,27 +1,30 @@
 import React from 'react';
 import './App.css';
+import Allcomponent from './component/allcomponent'
+import { Component } from 'react';
 
-function App() {
-  // return (
-  //   <div>
-  //     <h1>My Name is:</h1>
-      
-  //   </div>
-  // );
+// function App() {
+//   return (
+//     <div>
+//       <h1>My Name is:</h1>
+//       <Allcomponent />
+//     </div>
+//   );
+// }
 
-  return React.createElement('div',null,React.createElement('h1',null,'My name Is:'),<Name />);
+
+class App extends Component{
+  render(){
+    return (
+      <div>
+      <h1>My Name is:</h1>
+      <Allcomponent />
+    </div>
+    );
+  }
 }
 
-function Name() {
-  // return (
-  //   <div>
-  //     <h2>Ashique Abdullah</h2>
-  //   </div>
-  // );
-  return React.createElement('div',null,React.createElement('h1',null,'Md: Ashique Abdullah'));
-}
 
-  
 
 
 export default App;
